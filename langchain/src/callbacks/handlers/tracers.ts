@@ -99,6 +99,11 @@ export interface RunV2 extends RunV2Create {
   parent_run_id?: string; // uuid
 }
 
+export interface RunV2Result extends BaseRunV2 {
+  name: string;
+  parent_run_id?: string; // uuid
+}
+
 export interface AgentRunV2 extends RunV2 {
   actions: AgentAction[];
 }
